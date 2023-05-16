@@ -1,0 +1,276 @@
+<ion-content [scrollY]="false">
+
+  <ion-header collapse="fade" mode="ios">
+    <ion-toolbar class="header-cabecera-general">
+      <ion-button class="btn-navbar-circle btn-regreso" href="/cultura">
+        <img src="assets/img/left-navbar.png">
+      </ion-button>
+      <ion-title class="title-height-auto">
+        Cultural Calendar
+      </ion-title>
+      <ion-button class="btn-navbar-circle">
+        <img src="assets/img/more.png">
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="ion-content-scroll-host ion-padding-general ion-padding-general-content">
+    <ion-grid class="ion-no-padding">
+      <ion-row class="padding-left-right-general">
+        <ion-col size="12" class="ion-no-padding">
+          <ion-row class="row-detalle-cultura">
+            <ion-col size="12" class="ion-text-center"> 
+              <ion-img class="img-radius-detale" src="assets/img/img-detalle-cultura.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+              <h3 class="ion-text-center font-bold h3-titulo-detalles">Gastronomy</h3>
+            </ion-col>
+            <ion-col size="8" class="ion-no-padding">
+              <h3 class="font-light color-2f-size-19 ion-no-margin">
+                <img src="assets/img/icon-hambur.png" class="ion-margin-end">
+                Apr <span class="font-semibold">2023</span> 
+              </h3>
+            </ion-col>
+            <ion-col size="4" class="ion-no-padding ion-text-end">
+              <ion-button size="small" class="btn-search ion-no-margin" mode="ios" (click)="setOpen(true)">
+                <img src="assets/img/icon-search.png">
+              </ion-button>
+            </ion-col>
+            <ion-col size="12" class="ion-no-padding col-calendar-top">
+              <ion-datetime size="cover" show-default-buttons="false" presentation="date" mode="ios" value="2023-01-01" [highlightedDates]="highlightedDates" class="font-regular"></ion-datetime>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="padding-left-right-general">
+        <ion-col size="12">
+          <ion-col size="12" class="ion-no-padding">
+            <h4 class="font-extrabold color-2f-size-19 ion-margin-bottom">Hoy</h4>
+            <ion-row>
+              <ion-col size="2">
+                <h4 class="font-regular h4-dia">24</h4>
+                <p class="font-regular p-nombre-dia">Tue</p>
+              </ion-col>
+              <ion-col size="10" class="ion-no-padding-end">
+                <ion-card class="ion-no-margin card-calendario active-azul" href="/calendario-detalle">
+                  <ion-item lines="none" mode="ios">
+                    <ion-img src="assets/img/img-turismo.png" alt="calendario"></ion-img>
+                    <ion-label class="font-bold">
+                      Inti Raymi <br>
+                      <span class="font-regular">July 10, 2017 | 15:00</span>
+                    </ion-label>
+                    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+                  </ion-item>
+                </ion-card>
+                <ion-card class="ion-no-margin card-calendario active-verde">
+                  <ion-item lines="none" mode="ios">
+                    <ion-img src="assets/img/img-turismo.png" alt="calendario"></ion-img>
+                    <ion-label class="font-bold">
+                      Inti Raymi <br>
+                      <span class="font-regular">July 10, 2017 | 15:00</span>
+                    </ion-label>
+                    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+                  </ion-item>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col size="12" class="ion-no-padding">
+            <h4 class="font-extrabold color-2f-size-19 ion-margin-bottom">Este mes</h4>
+            <ion-row>
+              <ion-col size="2">
+                <h4 class="font-regular h4-dia">24</h4>
+                <p class="font-regular p-nombre-dia">Tue</p>
+              </ion-col>
+              <ion-col size="10" class="ion-no-padding-end">
+                <ion-card class="ion-no-margin card-calendario active-azul">
+                  <ion-item lines="none" mode="ios">
+                    <ion-img src="assets/img/img-turismo.png" alt="calendario"></ion-img>
+                    <ion-label class="font-bold">
+                      Inti Raymi <br>
+                      <span class="font-regular">July 10, 2017 | 15:00</span>
+                    </ion-label>
+                    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+                  </ion-item>
+                </ion-card>
+                <ion-card class="ion-no-margin card-calendario active-verde">
+                  <ion-item lines="none" mode="ios">
+                    <ion-img src="assets/img/img-turismo.png" alt="calendario"></ion-img>
+                    <ion-label class="font-bold">
+                      Inti Raymi <br>
+                      <span class="font-regular">July 10, 2017 | 15:00</span>
+                    </ion-label>
+                    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+                  </ion-item>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="ion-no-padding" >
+          <h3 class="font-extrabold color-2f-size-19 padding-left-right-general">Culture blog article</h3>
+          <swiper-container class="mySwiper padding-left-right-general" pagination="false" pagination-clickable="true" space-between="18" autoplay="false"
+            slides-per-view="1.2">
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+            <swiper-slide class="slider-radius-blog">
+              <ion-card class="card-slider-horizontal ion-no-margin" mode="ios">
+                <ion-img src="assets/img/img-slider.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+                <ion-card-content class="ion-text-start ion-no-padding">
+                  <h2 class="font-bold">This is a title of an important blog article</h2>
+                  <p class="font-regular">19/07/2022 <ion-icon name="ellipse" class="ion-margin-start ion-margin-end"></ion-icon> Category</p>
+                </ion-card-content>
+              </ion-card>
+            </swiper-slide>
+          </swiper-container>
+        </ion-col>
+      </ion-row>
+      <ion-row class="padding-left-right-general">
+        <ion-col size="12" class="" >
+          <h3 class="font-extrabold color-2f-size-19">Our culture expressions</h3>
+          <div class="div-item-grid-listin ion-margin-bottom">
+            <ion-card class="ion-no-margin card-relative" href="/cultura-detalle">
+              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
+              <ion-label class="label-absolute-negro ion-text-center font-bold">Gastronomy</ion-label>
+            </ion-card>
+            <ion-card class="ion-no-margin card-relative">
+              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
+              <ion-label class="label-absolute-negro ion-text-center font-bold">Music & dances</ion-label>
+            </ion-card>
+            <ion-card class="ion-no-margin card-relative">
+              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
+              <ion-label class="label-absolute-negro ion-text-center font-bold">Sports</ion-label>
+            </ion-card>
+            <ion-card class="ion-no-margin card-relative">
+              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
+              <ion-label class="label-absolute-negro ion-text-center font-bold">Ceremonias y costumbres</ion-label>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- modal-->
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <ion-button class="btn-close-modal ion-no-padding" (click)="setOpen(false)" mode="ios"><ion-icon name="close-outline"></ion-icon></ion-button>
+        <ion-searchbar mode="ios" class="search-modal" placeholder="Look for an operator" show-clear-button="never"></ion-searchbar>
+
+        <ion-list class="list-modal">
+          <ion-item class="item-search">
+            <ion-label class="font-regular">sdsn</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-grid class="ion-no-padding">
+      <ion-row class="row-center">
+        <ion-col size="3" size-md="2" size-lg="1">
+          <p class="ion-no-margin font-regular p-azul-size-10">Mostrando:</p>
+        </ion-col>
+        <ion-col size="9" size-lg="10" class="col-flex-footer">
+          <ion-segment [scrollable]="true" value="heart" mode="ios" class="segment-transparent">
+            <ion-segment-button value="todos" mode="ios" class="color-segment active-azul-segment">
+              <ion-label class="font-regular"><ion-avatar mode="ios" class="avatar-azul"></ion-avatar> Todos</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="festividadcusco" mode="ios" class="color-segment active-rojo-segment">
+              <div></div>
+              <ion-label class="font-regular"><ion-avatar mode="ios" class="avatar-rojo"></ion-avatar> Festivo</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="cultural" mode="ios" class="color-segment active-verde-segment">
+              <div></div>
+              <ion-label class="font-regular"><ion-avatar mode="ios" class="avatar-verde"></ion-avatar> Cultural</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="todos1" mode="ios" class="color-segment active-azul-segment">
+              <ion-label class="font-regular"><ion-avatar mode="ios" class="avatar-azul"></ion-avatar> Todos</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="festividadcusco1" mode="ios" class="color-segment active-rojo-segment">
+              <div></div>
+              <ion-label class="font-regular"><ion-avatar mode="ios" class="avatar-rojo"></ion-avatar> Festivo</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="cultural1" mode="ios" class="color-segment active-verde-segment">
+              <div></div>
+              <ion-label class="font-regular"><ion-avatar mode="ios" class="avatar-verde"></ion-avatar> Cultural</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
