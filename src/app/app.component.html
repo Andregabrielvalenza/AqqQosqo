@@ -1,3 +1,180 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-menu-toggle>
+          <ion-button class="btn-navbar-close">
+            <ion-icon name="close"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+
+        <div class="divOcultar">
+          <div class="div-nav-logo">
+            <img src="assets/img/logo-muni.png" class="img-sin-fondo img-margin-bottom">
+          </div>
+          <ion-card mode="ios" class="card-menu-nav" href="/about-cusco">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1019.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> About Cusco </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/calendario-fiestas">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1014.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Festivities calendar </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/cultura">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1159.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Culture </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/blog">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1016.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Cusco blog & news </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/turismo">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1159.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Tourism </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/solidarity">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1020.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Solidarity </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/diccionario-quechua">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1023.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Quechua basic diccionary </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/health">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1021.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Health in Cusco </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/transporte">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1018.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night" class="img-map-widht"
+                ></ion-img>
+                <ion-label class="font-semibold"> Transportation </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/seguridad">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/Grupo-1021.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Personal security in Cusco </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card mode="ios" class="card-menu-nav" href="/municipalidad">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                  src="assets/img/icon-torre.png"
+                  alt="The Wisconsin State Capitol building in Madison, WI at night"
+                ></ion-img>
+                <ion-label class="font-semibold"> Get to know municipality </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <div class="div-lineafooter"></div>
+
+          <ion-card mode="ios" class="card-menu-nav">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start"
+                src="assets/img/icon-like.png" alt="like"
+                ></ion-img>
+                <ion-label class="font-semibold"> Credits </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+
+        </div>
+
+        <div class="mostrarmenu">
+          <img src="assets/img/logo-muni.png" class="img-sin-fondo img-margin-bottom img-logo-submenu">
+          <ion-card mode="ios" class="card-menu-nav" href="/municipalidad">
+            <ion-card-content mode="ios">
+              <ion-item mode="ios">
+                <ion-img slot="start" src="assets/img/icon-like.png" alt="like"></ion-img>
+                <ion-label class="font-semibold"> Credits </ion-label>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <div class="div-item-creditos ion-margin-top">
+            <h3 class="font-bold">Planificación</h3>
+            <p class="font-regular">Municnpalidad de Cusco</p>
+            <p class="font-regular">Municnpalidad de Cusco</p>
+          </div>
+          <div class="div-item-creditos">
+            <h3 class="font-bold">Fotografia</h3>
+            <p class="font-regular">Nombre de fotografo</p>
+            <p class="font-regular">Nombre de fotografo</p>
+          </div>
+          <div class="div-item-creditos">
+            <h3 class="font-bold">Diseño y desarrollo</h3>
+            <p class="font-regular">PuntoPro</p>
+          </div>
+        </div>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

@@ -1,0 +1,17 @@
+.img-quechua{
+    width: 50%;
+    margin: 0 auto;
+}
+.ion-paddint-top-qeuchua{
+    padding-top: 4rem !important;
+}
+ion-breadcrumbs{
+    justify-content: center;
+    ion-breadcrumb{
+        --color: #000000;
+        font-size: 0.875rem;
+    }
+    ion-breadcrumb::part(native){
+        padding: 0px !important;
+    }
+}

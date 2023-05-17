@@ -2,11 +2,11 @@
 
   <ion-header collapse="fade" mode="ios">
     <ion-toolbar class="header-cabecera-general">
-      <ion-button class="btn-navbar-circle btn-regreso" href="/">
+      <ion-button class="btn-navbar-circle btn-regreso" href="/puntos-interes-detalle">
         <img src="assets/img/left-navbar.png">
       </ion-button>
       <ion-title class="title-height-auto">
-        Turismo
+        Operadores autorizados
       </ion-title>
       <ion-menu-toggle>
         <ion-button class="btn-navbar-circle">
@@ -19,15 +19,7 @@
   <div class="ion-content-scroll-host ion-padding-general ion-padding-general-content">
     <ion-grid class="ion-no-padding">
       <ion-row class="ion-no-padding">
-        <ion-col size="12" class="padding-left-right-general">
-          <ion-img src="assets/img/img-turismo-uno.png" alt="mapa" class="img-sin-fondo img-turismo-page"></ion-img>
-          <h3 class="font-extrabold color-2f-size-19 margin-top-titulo-28">Get to know Cusco</h3>
-          <p class="font-regular p-size-14-textos ion-margin-top">
-            Welcome to Cusco, the ancient capital of the Inca Empire and a city steeped in rich history and culture. Nestled high in the Andes mountains of Peru, Cusco is a popular destination for travelers seeking adventure, culture, and breathtaking landscapes.<br><br> From exploring the iconic Incan ruins of Machu Picchu, to wandering the charming cobblestone streets of the historic center, there is no shortage of things to see and do in Cusco. Marvel at the intricate stonework of the Sacsayhuaman fortress, sample traditional Peruvian cuisine, and immerse yourself in the vibrant local arts and music scene. Whether you're a history buff, an outdoor enthusiast, or a culture seeker, Cusco has something for everyone. So come experience the magic of this enchanting city for yourself!
-          </p>
-        </ion-col>
         <ion-col size="12">
-          <h3 class="font-extrabold color-2f-size-19 padding-left-right-general">What there is to do?</h3>
           <swiper-container class="mySwiper myswiper-transparent padding-left-right-general" pagination="false" space-between="10" autoplay="false"
           slides-per-view="3.5">
             <swiper-slide>
@@ -105,24 +97,78 @@
           </swiper-container>
         </ion-col>
         <ion-col size="12" class="padding-left-right-general col-maring-top-category" >
-          <div class="div-item-grid-listin ion-margin-bottom">
-            <ion-card class="ion-no-margin card-relative" href="/cultura-detalle">
-              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
-              <ion-label class="label-absolute-negro ion-text-center font-bold">Gastronomy</ion-label>
-            </ion-card>
-            <ion-card class="ion-no-margin card-relative" href="/puntos-interes-detalle">
-              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
-              <ion-label class="label-absolute-negro ion-text-center font-bold">Music & dances</ion-label>
-            </ion-card>
-            <ion-card class="ion-no-margin card-relative">
-              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
-              <ion-label class="label-absolute-negro ion-text-center font-bold">Sports</ion-label>
-            </ion-card>
-            <ion-card class="ion-no-margin card-relative">
-              <ion-img src="assets/img/img-slider.png" alt="ciudad" class=""></ion-img>
-              <ion-label class="label-absolute-negro ion-text-center font-bold">Ceremonias y costumbres</ion-label>
-            </ion-card>
-          </div>
+          <ion-searchbar mode="ios" class="search-modal" placeholder="Look for an operator" show-clear-button="never"></ion-searchbar>
+          <ion-item-group class="item-listen-group">
+            <ion-item-divider>
+              <ion-label class="font-extrabold">A</ion-label>
+            </ion-item-divider>
+          
+            <ion-item lines="none" mode="ios">
+              <ion-label>
+                <h3 class="font-bold">Nombre del proveedor</h3>
+                <p class="font-regular">
+                  <span class="span-av-numero-ancho">Av de la cuiltura 1234</span>
+                  <span class="span-numero-ancho">986876543</span>
+                </p>
+              </ion-label>
+            </ion-item>
+            
+            <ion-item lines="none" mode="ios">
+              <ion-label>
+                <h3 class="font-bold">Nombre del proveedor</h3>
+                <p class="font-regular">
+                  <span class="span-av-numero-ancho">Av de la cuiltura 1234</span>
+                  <span class="span-numero-ancho">986876543</span>
+                </p>
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none" mode="ios">
+              <ion-label>
+                <h3 class="font-bold">Nombre del proveedor</h3>
+                <p class="font-regular">
+                  <span class="span-av-numero-ancho">Av de la cuiltura 1234</span>
+                  <span class="span-numero-ancho">986876543</span>
+                </p>
+              </ion-label>
+            </ion-item>
+          </ion-item-group>
+          
+          <ion-item-group class="item-listen-group">
+            <ion-item-divider>
+              <ion-label class="font-extrabold">B</ion-label>
+            </ion-item-divider>
+          
+            <ion-item lines="none" mode="ios">
+              <ion-label>
+                <h3 class="font-bold">Nombre del proveedor</h3>
+                <p class="font-regular">
+                  <span class="span-av-numero-ancho">Av de la cuiltura 1234</span>
+                  <span class="span-numero-ancho">986876543</span>
+                </p>
+              </ion-label>
+            </ion-item>
+            
+            <ion-item lines="none" mode="ios">
+              <ion-label>
+                <h3 class="font-bold">Nombre del proveedor</h3>
+                <p class="font-regular">
+                  <span class="span-av-numero-ancho">Av de la cuiltura 1234</span>
+                  <span class="span-numero-ancho">986876543</span>
+                </p>
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none" mode="ios">
+              <ion-label>
+                <h3 class="font-bold">Nombre del proveedor</h3>
+                <p class="font-regular">
+                  <span class="span-av-numero-ancho">Av de la cuiltura 1234</span>
+                  <span class="span-numero-ancho">986876543</span>
+                </p>
+              </ion-label>
+            </ion-item>
+          </ion-item-group>
         </ion-col>
       </ion-row>
     </ion-grid>

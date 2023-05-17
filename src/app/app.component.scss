@@ -1,0 +1,181 @@
+@font-face{
+    font-family: NunitoSansSemiBold;
+    src : url('/assets/font/NunitoSans-SemiBold.ttf')
+  }
+  @font-face{
+    font-family: NunitoSansBold;
+    src : url('/assets/font/NunitoSans-Bold.ttf')
+  }
+  @font-face{
+    font-family: NunitoSansRegular;
+    src : url('/assets/font/NunitoSans-Regular.ttf')
+  }
+  @font-face{
+    font-family: NunitoSansExtraBold;
+    src : url('/assets/font/NunitoSans-ExtraBold.ttf')
+  }
+  @font-face{
+    font-family: NunitoSansLight;
+    src : url('/assets/font/NunitoSans-Light.ttf')
+  }
+  @font-face{
+    font-family: NunitoSansBlack;
+    src : url('/assets/font/NunitoSans-Black.ttf')
+  }
+  
+  .font-semibold{
+    font-family: NunitoSansSemiBold !important;
+  }
+  .font-bold{
+    font-family: NunitoSansBold !important;
+  }
+  .font-extrabold{
+    font-family: NunitoSansExtraBold !important;
+  }
+  .font-regular{
+    font-family: NunitoSansRegular !important;
+  }
+  .font-light{
+    font-family: NunitoSansLight !important;
+  }
+  .font-black{
+    font-family: NunitoSansBlack !important;
+  }
+  
+  
+  img{
+    mix-blend-mode: multiply;
+  }
+  .card-margin-cero{
+    margin: 0px !important;
+  }
+  .btn-navbar-close{
+    --background: #F8F8F8;
+    --background-activated: #F8F8F8;
+    --border-radius: 50%;
+    --box-shadow: 0px 0px 9px #1C00290F;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    --color: #2e6291;
+    --color-hover: #2e6291;
+    --color-activated: #2e6291;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --padding-top: 0px;
+    float: right;
+    font-size: 1.875rem;
+  }
+  
+  /*estilpos menu***/
+  ion-app{
+    --background: #F2F6F9;
+  }
+  body{
+    --ion-background-color: #F2F6F9 !important;
+    background-color: #F2F6F9 !important;
+  }
+  app-root{
+    --ion-background-color: #F2F6F9 !important;
+    background-color: #F2F6F9 !important;
+  }
+  ion-menu ion-content::part(background){
+    --background: #F2F6F9 !important;
+    background: #F2F6F9 !important;
+  }
+  .div-nav-logo{
+    border-bottom: 1px solid #DBDBDB;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    margin-top: 5rem;
+    img{
+        width: 60%;
+    }
+  }
+  ion-menu ion-content{
+    --padding-end: 1.875rem;
+    --padding-start: 1.875rem;
+  }
+  ion-menu::part(container){
+    width: 90%;
+  }
+  .card-menu-nav{
+    --background: transparent;
+    border-radius: 0px;
+    margin-bottom: 0.625rem !important;
+    box-shadow: none;
+    ion-card-content{
+        padding: 0px;
+        ion-item{
+            --background: transparent;
+            --inner-border-width: 0px;
+            --inner-padding-end: 0px;
+            ion-label{
+                --color: #666666 !important;
+                font-size: 1.125rem !important;
+            }
+            ion-img{
+                width: 8.5%;
+            }
+        }
+        ion-item::part(native){
+            padding-left: 0px;
+            padding-right: 0px;
+            box-shadow: none !important;
+            --inner-box-shadow: none !important;
+        }
+    }
+  }
+  .div-lineafooter{
+    width: 100%;
+    height: 1px;
+    background-color: #CFCFCF;
+    margin-top: 3.125rem;
+  }
+  .div-item-creditos{
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin-bottom: 6.25rem;
+    h3{
+        font-size: 1.125rem;
+        color: #000000;
+    }
+    p{
+        font-size: 1.125rem;
+        color: #000000;
+    }
+  }
+  .btn-navbar-close{
+    --background: #F8F8F8;
+    --background-activated: #F8F8F8;
+    --border-radius: 50%;
+    --box-shadow: 0px 0px 9px #1C00290F;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    --color: #2e6291;
+    --color-hover: #2e6291;
+    --color-activated: #2e6291;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --padding-top: 0px;
+    float: right;
+    font-size: 1.4375rem;
+    margin-top: 1rem;
+  }
+  .img-logo-submenu{
+    width: 30%;
+  }
+  .mostrarmenu{
+    display: none;
+  }
+  @media screen and (min-width: 768px){
+    ion-menu::part(container){
+        width: 50%;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    ion-menu::part(container){
+        width: auto;
+    }
+  }

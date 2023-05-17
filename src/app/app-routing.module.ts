@@ -66,6 +66,14 @@ const routes: Routes = [
   {
     path: 'municipalidad',
     loadChildren: () => import('./municipalidad/municipalidad.module').then( m => m.MunicipalidadPageModule)
+  },
+  {
+    path: 'operadores-autorizados',
+    loadChildren: () => import('./operadores-autorizados/operadores-autorizados.module').then( m => m.OperadoresAutorizadosPageModule)
+  },
+  {
+    path: 'diccionario-quechua',
+    loadChildren: () => import('./diccionario-quechua/diccionario-quechua.module').then( m => m.DiccionarioQuechuaPageModule)
   }
   
 ];
